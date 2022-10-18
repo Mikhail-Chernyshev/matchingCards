@@ -1,0 +1,9 @@
+.popup__score {
+  margin: 25px auto;
+  padding: 0;
+  font-size: 20px;
+  font-size: var(--text-size);
+  text-align: center;
+  line-height: var(--text-size);
+  letter-spacing: 1px;
+}

@@ -1,0 +1,3 @@
+.game__card_disabled {
+  pointer-events: none;
+}

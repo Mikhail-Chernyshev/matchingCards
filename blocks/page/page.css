@@ -1,0 +1,8 @@
+.page {
+    margin: auto;
+    padding: 0;
+    width: var(--page-side-size);
+    /* height: var(--page-side-size); */
+    background-color: var(--main-color);
+    position: relative;
+}

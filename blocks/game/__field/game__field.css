@@ -1,0 +1,10 @@
+.game__field {
+  margin: 30px auto;
+  padding: 0;
+  width: var(--game-side-size);
+  height: var(--game-side-size);
+  background: var(--background-game);
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}

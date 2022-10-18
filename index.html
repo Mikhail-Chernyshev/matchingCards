@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>!!!Matching 25 Cards Game!!!</title>
+  </head>
+
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <header class="header__title">MATCHING COUNTRYS</header>
+      </header>
+      <main class="main">
+        <section class="game">
+          <div class="game__elements">
+            <div class="game__element" id="count-match">0 match</div>
+            <div class="game__element" id="timer">0 mins 0 secs</div>
+            <div class="game__element" id="count-moves">0 move(s)</div>
+            <button
+              type="button"
+              class="game__element game__element_restart"
+              onclick="startGame()"
+            >
+              RESTART
+            </button>
+          </div>
+          <div class="game__field">
+            <div class="game__cards">
+              <div class="game__card">
+                <img
+                  src="./images/portugal.jpeg"
+                  alt="portugal"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/spain.jpeg"
+                  alt="spain"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img src="./images/usa.jpeg" alt="usa" class="game__image" />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/italy.jpeg"
+                  alt="italy"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/canada.jpeg"
+                  alt="canada"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/turkey.jpeg"
+                  alt="turkey"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/japan.jpeg"
+                  alt="japan"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/thailand.png"
+                  alt="thailand"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/chorvatiya.jpeg"
+                  alt="chorvatiya"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/georgia.jpeg"
+                  alt="georgia"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/mexica.jpeg"
+                  alt="mexica"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/argentina.jpeg"
+                  alt="argentina"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/aleksandraZhoposhnaya.jpg"
+                  alt="aleksandraZhoposhnaya"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/portugal.jpeg"
+                  alt="portugal"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/spain.jpeg"
+                  alt="spain"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img src="./images/usa.jpeg" alt="usa" class="game__image" />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/italy.jpeg"
+                  alt="italy"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/canada.jpeg"
+                  alt="canada"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/turkey.jpeg"
+                  alt="turkey"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/japan.jpeg"
+                  alt="japan"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/thailand.png"
+                  alt="thailand"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/chorvatiya.jpeg"
+                  alt="chorvatiya"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/georgia.jpeg"
+                  alt="georgia"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/mexica.jpeg"
+                  alt="mexica"
+                  class="game__image"
+                />
+              </div>
+              <div class="game__card">
+                <img
+                  src="./images/argentina.jpeg"
+                  alt="argentina"
+                  class="game__image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popup">
+          <div class="popup__content">
+            <div class="popup__header">
+              <h3 class="popup__title">GAME OVER</h3>
+              <button
+                type="button"
+                class="popup__close"
+                onclick="closePopup(popup)"
+              ></button>
+            </div>
+            <p class="popup__text">
+              Congratulations! <br />You've found all the countries to move to!
+            </p>
+            <p class="popup__score">
+              It took you <span class="popup__moves"></span> attempts and
+              <span class="popup__time"></span>
+            </p>
+            <button
+              type="button"
+              class="popup__restart"
+              onclick="closePopup(popup)"
+            >
+              PLAY AGAIN
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

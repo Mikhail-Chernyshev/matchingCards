@@ -1,0 +1,9 @@
+.game__element_restart {
+  /* background-image: url(../../../../images/restart.png); */
+  /* background-size: cover; */
+  /* width: 20px; */
+  /* height: 20px; */
+  border: none;
+  /* appearance: none; */
+  background: var(--main-color);
+}

@@ -1,0 +1,9 @@
+.game__cards {
+  margin: auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 110px);
+  column-gap: 20px;
+  grid-template-rows: repeat(5, 110px);
+  row-gap: 20px;
+}

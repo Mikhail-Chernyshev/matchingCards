@@ -1,0 +1,6 @@
+.popup__header {
+  margin: 30px auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}

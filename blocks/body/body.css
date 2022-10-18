@@ -1,0 +1,15 @@
+:root {
+  --body-color: #ffffff;
+  --main-color: #ede2e2;
+  --text-color: #1a1515;
+  --page-side-size: 1440px;
+  --game-side-size: 700px;
+  --title-size: 30px;
+  --background-game: linear-gradient(150deg, #235ad1, #23d1a8);
+  --background-popup: #fcd5f6;
+  --text-size: 24px;
+}
+.body {
+  display: flex;
+  background-color: var(--body-color);
+}
