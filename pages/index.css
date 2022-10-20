@@ -23,5 +23,6 @@
 @import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__time/popup__time.css);
 @import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__title/_symbols/popup__title_symbols.css);
 @import url(../blocks/popup/__score/popup__score.css);
 @import url(../blocks/popup/popup.css);

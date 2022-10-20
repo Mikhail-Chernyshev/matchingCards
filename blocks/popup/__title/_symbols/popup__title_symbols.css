@@ -1,0 +1,14 @@
+.popup__title_symbols {
+  margin: 0;
+  padding: 0;
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
