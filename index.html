@@ -21,28 +21,28 @@
             <button
               type="button"
               class="game__element game__element_restart"
-              onclick="startGame()"
+              onclick="openPopup(errorPopup)"
             >
               RESTART
             </button>
           </div>
           <div class="game__field">
             <div class="game__cards">
-              <div class="game__card" id="1">
+              <div class="game__card">
                 <img
                   src="./images/portugal.jpeg"
                   alt="portugal"
                   class="game__image"
                 />
               </div>
-              <div class="game__card" id="2">
+              <div class="game__card">
                 <img
                   src="./images/spain.jpeg"
                   alt="spain"
                   class="game__image"
                 />
               </div>
-              <div class="game__card" id="3">
+              <div class="game__card">
                 <img src="./images/usa.jpeg" alt="usa" class="game__image" />
               </div>
               <div class="game__card">
@@ -113,6 +113,7 @@
                   src="./images/aleksandraZhoposhnaya.jpg"
                   alt="aleksandraZhoposhnaya"
                   class="game__image"
+                  id="zopa"
                 />
               </div>
               <div class="game__card">
@@ -201,7 +202,10 @@
         <section class="popup">
           <div class="popup__content">
             <div class="popup__header">
-              <h3 class="popup__title"> <span class="popup__title_symbols">!!!</span> GAME OVER <span class="popup__title_symbols">!!!</span></h3>
+              <h3 class="popup__title">
+                <span class="popup__title_symbols">!!!</span> GAME OVER
+                <span class="popup__title_symbols">!!!</span>
+              </h3>
               <button
                 type="button"
                 class="popup__close"
@@ -222,6 +226,24 @@
             >
               PLAY AGAIN
             </button>
+          </div>
+        </section>
+        <section class="popup" id="popup-error">
+          <div class="popup__content">
+            <div class="popup__header">
+              <h3 class="popup__title">
+                <span class="popup__title_symbols">!!!</span> SORRY
+                <span class="popup__title_symbols">!!!</span>
+              </h3>
+              <button
+                type="button"
+                class="popup__close"
+                onclick=""
+              ></button>
+            </div>
+            <p class="popup__text">
+             THIS BUTTON FOR ORDER! FOR RESTART PLEASE RELOAD PAGE
+            </p>
           </div>
         </section>
       </main>

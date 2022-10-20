@@ -1,6 +1,7 @@
 const counterMatch = document.getElementById('count-match');
 const counterMoves = document.getElementById('count-moves');
 const popup = document.querySelector('.popup');
+const errorPopup = document.getElementById('popup-error');
 const closePopupButton = document.querySelector('.popup__close');
 const spanTime = document.querySelector('.popup__time');
 const spanMoves = document.querySelector('.popup__moves');
@@ -17,6 +18,7 @@ let second = 0;
 let minute = 0;
 let hour = 0;
 let interval;
+let len;
 
 function shuffle(array) {
   let currentIndex = array.length;
@@ -34,12 +36,18 @@ function shuffle(array) {
   return array;
 }
 function startGame() {
+  len = 0;
   let shuffledImages = shuffle(picturesArray);
+  // openedCards = [];
+  // moves = 0;
 
   for (i = 0; i < shuffledImages.length; i++) {
+    // cards[i].innerHTML = '';
+
     cards[i].appendChild(shuffledImages[i]);
     cards[i].type = `${shuffledImages[i].alt}`;
     cards[i].children[0].classList.remove('game__image_visibilety');
+    cards[i].classList.remove('disabled');
   }
   cards.forEach((card) => {
     card.addEventListener('click', () => {
@@ -71,11 +79,19 @@ function openCard(card) {
   card.children[0].classList.add('game__image_visibilety');
   tapOnCard(card);
 }
-
+function restartGame() {
+  len = 0;
+  openedCards = [];
+  matchedCards = [];
+  startGame();
+}
 function tapOnCard(card) {
+  // console.log(card);
   openedCards.push(card);
-  let len = openedCards.length;
-  if (len === 2) {
+  console.log(openedCards);
+  len = openedCards.length;
+  // console.log(len);
+  if (len == 2) {
     moveCounter();
     if (openedCards[0].type === openedCards[1].type) {
       matched();
@@ -113,7 +129,7 @@ function matched() {
   matchedCards.push(openedCards[0]);
   matchedCards.push(openedCards[1]);
   openedCards = [];
-  if (matchedCards.length == 24) {
+  if (matchedCards.length === 24) {
     endGame();
   }
 }
@@ -130,6 +146,8 @@ startGame();
 
 function endGame() {
   matchedCards = [];
+  openedCards = [];
+  len = 0;
   openPopup(popup);
   spanMoves.innerHTML = moves;
   spanTime.innerHTML = `${minute} mins ${second} secs`;

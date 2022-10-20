@@ -5,6 +5,7 @@
   height: 100px;
   visibility: hidden;
   border-radius: 10px;
+  /* transition: 0.5s; */
 }
 
 @media screen and (max-width: 767px) {
@@ -13,3 +14,10 @@
     height: 50px;
   }
 }
+/* .game__image:hover {
+  transform: scale(1.5);
+} */
+
+/* img#zopa:hover {
+  transform: scale(5);
+} */
