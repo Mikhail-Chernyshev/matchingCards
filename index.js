@@ -4,7 +4,6 @@ const popup = document.querySelector('.popup');
 const closePopupButton = document.querySelector('.popup__close');
 const spanTime = document.querySelector('.popup__time');
 const spanMoves = document.querySelector('.popup__moves');
-
 const timer = document.getElementById('timer');
 const cards = document.querySelectorAll('.game__card');
 const pictures = document.querySelectorAll('.game__image');
@@ -18,7 +17,6 @@ let second = 0;
 let minute = 0;
 let hour = 0;
 let interval;
-let totalGameTime;
 
 function shuffle(array) {
   let currentIndex = array.length;
@@ -54,8 +52,6 @@ function startGame() {
   counterMatch.innerHTML = '0';
   moves = 0;
   counterMoves.innerHTML = `${moves} move(s)`;
-  // counter.innerText = `${moves} move(s)`;
-
   timer.innerHTML = '0 mins 0 secs';
   clearInterval(interval);
 }
@@ -113,7 +109,6 @@ function moveCounter() {
   }
 }
 function matched() {
-  console.log('2 pipiski');
   moveCounterMatch();
   matchedCards.push(openedCards[0]);
   matchedCards.push(openedCards[1]);
@@ -123,7 +118,6 @@ function matched() {
   }
 }
 function unmatched() {
-  console.log('pizda');
   disabledCards();
   setTimeout(function () {
     openedCards[0].children[0].classList.remove('game__image_visibilety');
