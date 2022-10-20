@@ -3,11 +3,17 @@
   padding: 0;
   max-width: 60%;
   min-height: 40%;
-  top: 8%;
+  top: 18%;
   position: relative;
   border: 1px solid var(--main-color);
   border-radius: 10px;
   background: var(--background-popup);
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 767px) {
+  .popup__content {
+    max-width: 80%;
+  }
 }

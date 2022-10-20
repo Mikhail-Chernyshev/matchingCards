@@ -6,3 +6,8 @@
   line-height: var(--text-size);
   letter-spacing: 1px;
 }
+@media screen and (max-width: 767px) {
+  .popup__text {
+    margin: 0 10px;
+  }
+}
