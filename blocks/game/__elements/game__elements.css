@@ -1,8 +1,13 @@
 .game__elements {
-    margin: 0 auto;
-    padding: 0;
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .game__elements {
+    justify-content: space-around;
+  }
 }

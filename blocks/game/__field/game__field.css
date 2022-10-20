@@ -8,3 +8,9 @@
   border-radius: 10px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 767px) {
+  .game__field {
+    width: 350px;
+    height: 350px;
+  }
+}
