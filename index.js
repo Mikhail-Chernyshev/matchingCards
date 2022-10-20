@@ -157,3 +157,12 @@ function closePopup(popup) {
   popup.classList.remove('popup_opened');
   startGame();
 }
+
+function pillars(numPill, dist, width) {
+  let result;
+  let pillars = numPill - 2;
+  let distCm = dist * 100 + pillars * width;
+  console.log(distCm);
+  return distCm;
+}
+pillars(10, 10, 30);

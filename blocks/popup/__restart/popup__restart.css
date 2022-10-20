@@ -6,9 +6,13 @@
   border-radius: 10px;
   border: none;
   font-size: 24px;
+  color: rgb(14, 56, 242);
+  letter-spacing: 3px;
+  font-weight: 600;
 }
 @media screen and (max-width: 767px) {
   .popup__restart {
     margin-bottom: 20px;
+    height: 70px;
   }
 }

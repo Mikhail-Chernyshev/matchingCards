@@ -12,4 +12,5 @@
 .body {
   display: flex;
   background-color: var(--body-color);
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 }
