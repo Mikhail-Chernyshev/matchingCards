@@ -163,24 +163,3 @@ function closePopup(popup) {
   popup.classList.remove('popup_opened');
   startGame();
 }
-
-function getGrade (s1, s2, s3) {
-  let result;
-  result = (s1 + s2 + s3)/3;
-  console.log(result)
-  let grade;
-  if(result > 90 ) {
-    grade = 'A' 
-  } else if (80 <= result && result < 90  ) {
-    grade = 'B'
-  } else if (70 <= result && result< 80 ) {
-    grade = 'C'
-  } else if (60 < result < 70 ) {
-    grade = 'D'
-  } else if (result < 60 ) {
-    grade = 'F'
-  }
-  console.log(grade);
-  return grade;
-}
-getGrade(65, 65, 65)
