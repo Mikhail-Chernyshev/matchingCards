@@ -1,6 +1,6 @@
-.header__title{
-    padding: 0;
-    color: var(--text-color);
-    font-size: var(--title-size);
-    margin: 30px auto 20px;
+.header__title {
+  padding: 0;
+  color: var(--text-color);
+  font-size: var(--title-size);
+  margin: 30px auto 20px;
 }
