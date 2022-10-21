@@ -38,8 +38,6 @@ function shuffle(array) {
 function startGame() {
   len = 0;
   let shuffledImages = shuffle(picturesArray);
-  // openedCards = [];
-  // moves = 0;
 
   for (i = 0; i < shuffledImages.length; i++) {
     // cards[i].innerHTML = '';
@@ -86,11 +84,8 @@ function restartGame() {
   startGame();
 }
 function tapOnCard(card) {
-  // console.log(card);
   openedCards.push(card);
-  console.log(openedCards);
   len = openedCards.length;
-  // console.log(len);
   if (len == 2) {
     moveCounter();
     if (openedCards[0].type === openedCards[1].type) {

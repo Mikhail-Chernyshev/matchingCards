@@ -21,8 +21,8 @@
             <button
               type="button"
               class="game__element game__element_restart"
-              onclick="openPopup(errorPopup)"
-            >
+              onclick="location.reload()"
+              >
               RESTART
             </button>
           </div>
@@ -209,7 +209,7 @@
               <button
                 type="button"
                 class="popup__close"
-                onclick="closePopup(popup)"
+                onclick="location.reload()"
               ></button>
             </div>
             <p class="popup__text">
@@ -222,13 +222,13 @@
             <button
               type="button"
               class="popup__restart"
-              onclick="closePopup(popup)"
-            >
+              onclick="location.reload()"
+              >
               PLAY AGAIN
             </button>
           </div>
         </section>
-        <section class="popup" id="popup-error">
+        <!-- <section class="popup" id="popup-error">
           <div class="popup__content">
             <div class="popup__header">
               <h3 class="popup__title">
@@ -238,14 +238,14 @@
               <button
                 type="button"
                 class="popup__close"
-                onclick=""
+                onclick="location.reload()"
               ></button>
             </div>
             <p class="popup__text">
-             THIS BUTTON FOR ORDER! FOR RESTART PLEASE RELOAD PAGE
+              THIS BUTTON OUT FOR ORDER! <br>FOR RESTART PLEASE RELOAD PAGE.
             </p>
           </div>
-        </section>
+        </section> -->
       </main>
     </div>
     <script src="./index.js"></script>
