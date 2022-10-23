@@ -85,10 +85,16 @@ function restartGame() {
 }
 function tapOnCard(card) {
   openedCards.push(card);
+  if (openedCards[0] === openedCards[1]) {
+    openedCards.length = 1;
+  }
   len = openedCards.length;
   if (len == 2) {
     moveCounter();
-    if (openedCards[0].type === openedCards[1].type) {
+    if (
+      openedCards[0] !== openedCards[1] &&
+      openedCards[0].type === openedCards[1].type
+    ) {
       matched();
     } else {
       unmatched();
